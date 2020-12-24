@@ -1,0 +1,19 @@
+{
+  "name": "finder_by_cep",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "10.0.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-lottie": "^1.2.3",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "sass": "^1.30.0"
+  }
+}

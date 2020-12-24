@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap");
+@import "./vars";
+@import "./mixins";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+main {
+  @include flex(center, center);
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 43px;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: 58.5%;
+  }
+  main {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 860px) {
+  :root {
+    font-size: 51.5%;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 48.5%;
+  }
+
+  main {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 580px) {
+  :root {
+    font-size: 44.5%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  :root {
+    font-size: 42.5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  :root {
+    font-size: 40.5%;
+  }
+}

@@ -1,0 +1,35 @@
+@import "./vars";
+@import "./mixins";
+
+.footer {
+  .footerWave {
+    @include defaultBackground();
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-image: url("../public/images/wave.svg");
+  }
+  .footerContainer {
+    background-color: $colorYellow;
+    padding: 15px;
+  }
+
+  .footerContent {
+    @include flex(space-between, center);
+    height: 60px;
+    max-width: 1440px;
+    margin: auto;
+    color: $colorBlack;
+    h1 {
+      font-size: $sizeText;
+      font-weight: 400;
+    }
+    .icon {
+      @include defaultBackground();
+      background-image: url("../public/images/github.svg");
+      width: 22px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}

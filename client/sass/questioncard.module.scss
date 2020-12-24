@@ -1,0 +1,50 @@
+@import "./vars";
+@import "./mixins";
+
+.container {
+  @include flex(space-between, center);
+  width: 100%;
+  margin: 100px 0;
+  .questionCard {
+    @include flex(initial, initial);
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: $defaultShadow;
+    margin: 15px 0;
+    padding: 42px 25px;
+    width: 55%;
+    background-color: $colorYellow;
+    color: $colorBlack;
+    h1 {
+      &:last-of-type {
+        margin-top: 25px;
+      }
+      font-size: $sizeSubTitle;
+      font-weight: 500;
+      margin-bottom: 27px;
+    }
+    p {
+      font-size: $sizeText;
+      font-weight: 300;
+      margin-bottom: 22px;
+    }
+  }
+  .imageContainer {
+    @include defaultBackground();
+    width: 40%;
+    height: 400px;
+    background-image: url("../public/images/undraw_searching_p5ux.svg");
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    justify-content: center;
+    .questionCard {
+      width: 100%;
+    }
+    .imageContainer {
+      display: none;
+    }
+  }
+}

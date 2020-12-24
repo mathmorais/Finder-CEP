@@ -1,0 +1,55 @@
+@import "./mixins";
+@import "./vars";
+
+.formContainer {
+  @include flex(initial, initial);
+  height: 44px;
+  margin-bottom: 44px;
+  border: 3px solid rgba(202, 58, 58, 0);
+  border-radius: 8px;
+
+  transition: border 0.25s ease;
+  .locationIcon {
+    @include flex(center, center);
+    color: $colorYellow;
+    background-color: $colorBlack;
+    width: 15%;
+    min-width: 40px;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+  }
+  input {
+    &::placeholder {
+      color: $colorYellow;
+      opacity: 0.65;
+    }
+    width: 100%;
+    padding: 0 15px;
+    background: $colorDarkYellow;
+    color: $colorWhite;
+    outline: none;
+    border: none;
+  }
+
+  button {
+    &:hover {
+      background-color: $colorYellow;
+      color: $colorBlack;
+    }
+    border: 1px solid $colorDarkYellow;
+    width: 30%;
+    font-weight: lighter;
+    border-radius: 0 5px 5px 0;
+    background-color: $colorBlack;
+    color: $colorYellow;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border 0.15s ease,
+      color 0.15s ease-in-out;
+  }
+}
+
+.error {
+  border-color: rgba(202, 58, 58, 0.8);
+}
