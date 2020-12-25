@@ -64,4 +64,4 @@ Mas se quiser ir mais alem e adicionar suas proprias novas funcionalidades, apen
 
 ## Contato
 
-- GitHub [@mathmorais](https://github.com/mathmorais})
+- GitHub [@mathmorais](https://github.com/mathmorais)
